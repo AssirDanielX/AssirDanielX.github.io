@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Assirdoua Daniel - Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="Style/style.css">
+</head>
+<body>
+
+<!-- ════════ NAV ════════ -->
+<nav>
+  <div class="nav-logo">&lt;<span>ADB</span> /&gt;</div>
+  <ul class="nav-links">
+    <li><a href="#about">À propos</a></li>
+    <li><a href="#skills">Compétences</a></li>
+    <li><a href="#projects">Projets</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="theme-btn" id="themeBtn" aria-label="Changer de thème">
+      <i class="bx bx-moon"></i>
+      <i class="bx bx-sun"></i>
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ════════ SIDEBAR MOBILE ════════ -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+<div class="sidebar" id="sidebar">
+  <ul>
+    <li><a href="#about" class="sidebar-link"><i class="bx bx-user"></i> À propos</a></li>
+    <li><a href="#skills" class="sidebar-link"><i class="bx bx-code-alt"></i> Compétences</a></li>
+    <li><a href="#projects" class="sidebar-link"><i class="bx bx-grid-alt"></i> Projets</a></li>
+    <li><a href="#contact" class="sidebar-link"><i class="bx bx-envelope"></i> Contact</a></li>
+    <li><a href="CV_PLACEHOLDER.pdf" target="_blank" class="sidebar-link"><i class="bx bx-file"></i> Mon CV</a></li>
+  </ul>
+</div>
+
+<!-- ════════ HERO ════════ -->
+<section class="hero" id="home">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-tag">Disponible pour de nouveaux projets</div>
+      <h1>
+        <span class="label">Bonjour, je suis </span>
+        <span class="name-line" id="typedName"> <span class="cursor-blink"></span></span>
+      </h1>
+      <p class="hero-sub">
+        Développeur passionné par le <strong>web</strong>, les <strong>jeux vidéo</strong>,
+        le <strong>mobile</strong> et la <strong>modélisation 3D</strong>.
+        Je construis des expériences numériques qui allient performance et créativité.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary"><i class="bx bx-grid-alt"></i> Mes projets</a>
+        <a href="#contact" class="btn btn-outline"><i class="bx bx-envelope"></i> Me contacter</a>
+        <a href="CV_PLACEHOLDER.pdf" target="_blank" class="btn btn-outline"><i class="bx bx-download"></i> Mon CV</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <div class="hero-photo-placeholder">
+        <i class="bx bx-user-circle"></i>
+        <span>Remplace par ta photo</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ ABOUT ════════ -->
+<section id="about">
+  <div class="section-head reveal">
+    <div class="divider"></div>
+    <h2 class="section-title">À propos de moi</h2>
+  </div>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p>
+        Je suis <strong>Assirdoua Daniel Bien</strong>, développeur aux multiples facettes.
+        Mon parcours m'a amené à explorer plusieurs univers&nbsp;: le web, avec ses interfaces dynamiques,
+        les jeux vidéo, où la logique rencontre la créativité, le mobile et les bases de la modélisation 3D.
+      </p>
+      <p>
+        Ce qui me motive&nbsp;? Créer des projets qui <strong>racontent quelque chose</strong>.
+        Que ce soit une app web intuitive, un jeu qui capte l'attention ou une interface mobile fluide,
+        j'aime que le résultat final reflète une vraie intention.
+      </p>
+      <p>
+        En dehors du code, je consomme du contenu tech, explore de nouvelles technologies
+        et j'ai une légère obsession pour les jeux bien designés.
+      </p>
+    </div>
+    <div class="about-stats reveal">
+      <div class="stat-card">
+        <div class="stat-number">9+</div>
+        <div class="stat-label">Langages</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">4</div>
+        <div class="stat-label">Domaines</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">5+</div>
+        <div class="stat-label">Frameworks</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">∞</div>
+        <div class="stat-label">Curiosité</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ SKILLS ════════ -->
+<section id="skills">
+  <div class="section-head reveal">
+    <div class="divider"></div>
+    <h2 class="section-title">Compétences</h2>
+    <p class="section-sub">Un spectre technique large, cultivé avec curiosité et honnêteté.</p>
+  </div>
+  <div class="skills-domains">
+
+    <!-- WEB -->
+    <div class="domain-card reveal">
+      <div class="domain-icon"><i class="bx bx-globe"></i></div>
+      <div class="domain-name">Développement Web</div>
+      <div class="domain-desc">Interfaces et applications web, du front-end au back-end.</div>
+      <div class="lang-badges">
+        <span class="badge">HTML</span><span class="badge">CSS</span>
+        <span class="badge">JavaScript</span><span class="badge">TypeScript</span>
+        <span class="badge">Python</span><span class="badge">Java</span>
+        <span class="badge fw">Django</span><span class="badge fw">React</span>
+        <span class="badge fw">Spring Boot</span>
+      </div>
+      <div class="skill-bars">
+        <div class="skill-row">
+          <div class="skill-row-label"><span>HTML / CSS</span><span>65%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" data-w="0.65"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-row-label"><span>JavaScript / TS</span><span>45%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" data-w="0.45"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-row-label"><span>Django</span><span>35%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" data-w="0.35"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-row-label"><span>Spring Boot</span><span>15%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" data-w="0.15"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JEUX VIDÉO -->
+    <div class="domain-card reveal">
+      <div class="domain-icon"><i class="bx bx-joystick"></i></div>
+      <div class="domain-name">Jeux Vidéo</div>
+      <div class="domain-desc">Mécaniques de jeu, systèmes interactifs et expériences immersives.</div>
+      <div class="lang-badges">
+        <span class="badge">GDScript</span><span class="badge">C++</span>
+        <span class="badge">C</span>
+        <span class="badge fw">Godot</span><span class="badge fw">Unreal Engine</span>
+      </div>
+      <div class="skill-bars">
+        <div class="skill-row">
+          <div class="skill-row-label"><span>GDScript / Godot</span><span>50%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" data-w="0.50"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-row-label"><span>C / C++</span><span>40%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" data-w="0.40"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-row-label"><span>Unreal Engine</span><span>25%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" data-w="0.25"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MOBILE -->
+    <div class="domain-card reveal">
+      <div class="domain-icon"><i class="bx bx-mobile-alt"></i></div>
+      <div class="domain-name">Développement Mobile</div>
+      <div class="domain-desc">Applications mobiles cross-platform avec un framework web.</div>
+      <div class="lang-badges">
+        <span class="badge">TypeScript</span><span class="badge">JavaScript</span>
+        <span class="badge fw">Ionic</span>
+      </div>
+      <div class="skill-bars">
+        <div class="skill-row">
+          <div class="skill-row-label"><span>Ionic</span><span>35%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" data-w="0.35"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3D -->
+    <div class="domain-card reveal">
+      <div class="domain-icon"><i class="bx bx-cube-alt"></i></div>
+      <div class="domain-name">Modélisation 3D</div>
+      <div class="domain-desc">Exploration de la création d'assets 3D — en apprentissage continu.</div>
+      <div class="lang-badges">
+        <span class="badge fw">Blender</span>
+      </div>
+      <div class="skill-bars">
+        <div class="skill-row">
+          <div class="skill-row-label"><span>Modélisation</span><span>25%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" data-w="0.25"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-row-label"><span>Texturing</span><span>20%</span></div>
+          <div class="skill-bar"><div class="skill-bar-fill" data-w="0.20"></div></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════ PROJECTS ════════ -->
+<section id="projects">
+  <div class="section-head reveal">
+    <div class="divider"></div>
+    <h2 class="section-title">Projets</h2>
+    <p class="section-sub">Passe la souris sur une carte pour en savoir plus.</p>
+  </div>
+
+  <div class="projects-filter reveal">
+    <button class="filter-btn active" data-filter="all">Tous</button>
+    <button class="filter-btn" data-filter="web">Web</button>
+    <button class="filter-btn" data-filter="game">Jeux vidéo</button>
+    <button class="filter-btn" data-filter="mobile">Mobile</button>
+    <button class="filter-btn" data-filter="3d">3D</button>
+  </div>
+
+  <div class="projects-grid">
+
+    <!-- ═══ AnimGate ═══ -->
+    <div class="project-card reveal" data-cat="web">
+      <div class="pc-visual bg-animgate">
+        <img
+          class="pc-img"
+          src="images/AnimGate.png"
+          alt="Capture AnimGate"
+          onerror="this.style.display='none'"
+        >
+        <div class="pc-fallback">
+          <i class="bx bx-tv"></i>
+          <span>images/AnimGate.png</span>
+        </div>
+      </div>
+      <div class="pc-strip">
+        <span class="pc-cat">Application Web</span>
+        <span class="pc-name">AnimGate</span>
+      </div>
+      <div class="pc-hover">
+        <span class="pc-cat">Application Web</span>
+        <span class="pc-name">AnimGate</span>
+        <p class="pc-desc">
+          Mini Crunchyroll — plateforme de streaming d'animés construite avec les frameworks django et angular.
+          Catalogue, lecteur intégré et gestion des épisodes.
+        </p>
+        <div class="pc-stack">
+          <span class="pc-tag">HTML</span><span class="pc-tag">CSS</span>
+          <span class="pc-tag">JavaScript</span><span class="pc-tag">Django</span>
+          <span class="pc-tag">Python</span>
+        </div>
+        <div class="pc-actions">
+          <a href="https://animgate.vercel.app" class="pc-btn pc-btn-primary" target="_blank"><i class="bx bx-link-external"></i> Demo</a>
+          <a href="https://github.com/hardschoolwork/Animgate" class="pc-btn pc-btn-outline" target="_blank"><i class="bx bxl-github"></i> GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="project-card reveal" data-cat="game">
+      <div class="pc-visual bg-game">
+        <img
+          class="pc-img"
+          src="images/jeu1.png"
+          alt="Capture projet jeu vidéo"
+          onerror="this.style.display='none'"
+        >
+        <div class="pc-fallback">
+          <i class="bx bx-joystick"></i>
+          <span>images/jeu1.png</span>
+        </div>
+      </div>
+      <div class="pc-strip">
+        <span class="pc-cat">Jeu vidéo</span>
+        <span class="pc-name">Projet Jeu — à venir</span>
+      </div>
+      <div class="pc-hover">
+        <span class="pc-cat">Jeu vidéo</span>
+        <span class="pc-name">Projet Jeu — à venir</span>
+        <p class="pc-desc">Emplacement réservé. Remplace ce placeholder avec ton prochain projet Godot ou Unreal Engine.</p>
+        <div class="pc-stack">
+          <span class="pc-tag">GDScript</span><span class="pc-tag">Godot</span>
+        </div>
+        <div class="pc-actions">
+          <a href="#" class="pc-btn pc-btn-outline" target="_blank"><i class="bx bxl-github"></i> GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="project-card reveal" data-cat="mobile">
+      <div class="pc-visual bg-mobile">
+        <img
+          class="pc-img"
+          src="images/mobile1.png"
+          alt="Capture projet mobile"
+          onerror="this.style.display='none'"
+        >
+        <div class="pc-fallback">
+          <i class="bx bx-mobile-alt"></i>
+          <span>images/mobile1.png</span>
+        </div>
+      </div>
+      <div class="pc-strip">
+        <span class="pc-cat">Application Mobile</span>
+        <span class="pc-name">Projet Mobile — à venir</span>
+      </div>
+      <div class="pc-hover">
+        <span class="pc-cat">Application Mobile</span>
+        <span class="pc-name">Projet Mobile — à venir</span>
+        <p class="pc-desc">Emplacement réservé pour un projet Ionic. Duplique cette carte quand tu es prêt.</p>
+        <div class="pc-stack">
+          <span class="pc-tag">Ionic</span><span class="pc-tag">TypeScript</span>
+        </div>
+        <div class="pc-actions">
+          <a href="#" class="pc-btn pc-btn-outline" target="_blank"><i class="bx bxl-github"></i> GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="project-card reveal" data-cat="3d">
+      <div class="pc-visual bg-3d">
+        <img
+          class="pc-img"
+          src="images/3d1.png"
+          alt="Capture projet 3D"
+          onerror="this.style.display='none'"
+        >
+        <div class="pc-fallback">
+          <i class="bx bx-cube-alt"></i>
+          <span>images/3d1.png</span>
+        </div>
+      </div>
+      <div class="pc-strip">
+        <span class="pc-cat">Modélisation 3D</span>
+        <span class="pc-name">Projet 3D — à venir</span>
+      </div>
+      <div class="pc-hover">
+        <span class="pc-cat">Modélisation 3D</span>
+        <span class="pc-name">Projet 3D — à venir</span>
+        <p class="pc-desc">Emplacement pour un asset ou une scène Blender. Remplace quand tu auras du matériel.</p>
+        <div class="pc-stack">
+          <span class="pc-tag">Blender</span>
+        </div>
+        <div class="pc-actions">
+          <a href="#" class="pc-btn pc-btn-outline" target="_blank"><i class="bx bx-show"></i> Voir</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════ CONTACT ════════ -->
+<section id="contact">
+  <div class="section-head reveal">
+    <div class="divider"></div>
+    <h2 class="section-title">Travaillons ensemble</h2>
+  </div>
+  <div class="contact-wrap">
+    <div class="contact-info reveal">
+      <p>
+        Tu as un projet web, un jeu ou une idée créative en tête&nbsp;?
+        Je suis ouvert aux nouvelles opportunités, aux collaborations
+        ou simplement à un échange autour de la tech.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:dannerworld1@gmail.com" class="contact-link-item email" target="_blank">
+          <div class="cli-icon"><i class="bx bxl-gmail"></i></div>
+          <div class="cli-text">
+            <span class="cli-label">Email</span>
+            <span class="cli-val">dannerworld1@gmail.com</span>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/daniel-assirdoua-32a592342/" target="_blank" class="contact-link-item linkedin">
+          <div class="cli-icon"><i class="bx bxl-linkedin"></i></div>
+          <div class="cli-text">
+            <span class="cli-label">LinkedIn</span>
+            <span class="cli-val">daniel-assirdoua</span>
+          </div>
+        </a>
+        <a href="https://github.com/hardschoolwork" target="_blank" class="contact-link-item github">
+          <div class="cli-icon"><i class="bx bxl-github"></i></div>
+          <div class="cli-text">
+            <span class="cli-label">GitHub</span>
+            <span class="cli-val">hardschoolwork</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-group">
+          <label class="form-label" for="fname">Nom</label>
+          <input type="text" id="fname" name="from_name" class="form-input" placeholder="Jean Dupont" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="femail">Email</label>
+          <input type="email" id="femail" name="from_email" class="form-input" placeholder="jean@exemple.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="fmsg">Message</label>
+          <textarea id="fmsg" name="message" class="form-textarea" placeholder="Décris ton projet ou ton idée..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;" id="submitBtn">
+          <i class="bx bx-send"></i> Envoyer le message
+        </button>
+        <div class="form-msg" id="formMsg"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script src="Script/script.js"></script>
+
+</body>
+</html>
