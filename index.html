@@ -71,7 +71,7 @@
       </div>
     </div>
     <div class="hero-photo">
-      <!-- Remplace le bloc ci-dessous par : <img src="images/photo.jpg" alt="Assirdoua Daniel"> -->
+      <!-- Remplacer par <img src="images/photo.jpg" alt="Assirdoua Daniel"> -->
       <div class="hero-photo-placeholder">
         <i class="bx bx-user-circle"></i>
         <span></span>
@@ -264,7 +264,6 @@
   <div class="section-head reveal">
     <div class="divider"></div>
     <h2 class="section-title">Projets</h2>
-    <p class="section-sub">Passe la souris sur une carte pour en savoir plus.</p>
   </div>
 
   <div class="projects-filter reveal">
@@ -409,25 +408,29 @@
   <div class="section-head reveal">
     <div class="divider"></div>
     <h2 class="section-title">Montage vidéo</h2>
-    <p class="section-sub">
-      Pour ajouter une vidéo YouTube : décommente l'iframe et remplace <code>TON_ID_ICI</code>
-      par l'ID de ta vidéo. Pour une vidéo locale : utilise une balise <code>&lt;video&gt;</code>.
-    </p>
+    
   </div>
   <div class="video-grid">
 
     <!-- Vidéo 1
-         YouTube : src="https://www.youtube.com/embed/TON_ID_ICI"
-         Local   : <video src="videos/montage1.mp4" controls></video> -->
+        Rappel memoire:
+          Pour les video sur youtube utiliser <iframe> et 
+              <iframe
+                src="https://www.youtube.com/embed/TON_ID_ICI"
+                allowfullscreen
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope">
+              </iframe>
+               
+              YouTube : src="https://www.youtube.com/embed/ID"
+
+          Pour les video en local utiliser <video>
+             Local   : <video src="videos/montage1.mp4" controls></video> 
+      -->
+    
     <div class="video-card reveal">
+      
       <div class="video-thumb">
-        <!--
-        <iframe
-          src="https://www.youtube.com/embed/TON_ID_ICI"
-          allowfullscreen
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope">
-        </iframe>
-        -->
+        
         <div class="video-placeholder">
           <i class="bx bx-video-plus"></i>
           <span>Vidéo 1 — à ajouter</span>
@@ -438,7 +441,7 @@
       </div>
       <div class="video-info">
         <div class="video-title">Montage cinématique #1</div>
-        <div class="video-meta">Editing · Color grading · Motion</div>
+        <div class="video-meta">Editing</div>
       </div>
     </div>
 
@@ -455,7 +458,7 @@
       </div>
       <div class="video-info">
         <div class="video-title">Montage cinématique #2</div>
-        <div class="video-meta">Editing · Color grading · Motion</div>
+        <div class="video-meta">Editing</div>
       </div>
     </div>
 
@@ -472,7 +475,7 @@
       </div>
       <div class="video-info">
         <div class="video-title">Montage cinématique #3</div>
-        <div class="video-meta">Editing · Color grading · Motion</div>
+        <div class="video-meta">Editing</div>
       </div>
     </div>
 
@@ -490,7 +493,7 @@
   </div>
   <div class="design-grid">
 
-    <!-- Design 1 — remplace src="images/design1.jpg" -->
+    <!-- Design 1 -->
     <div class="design-card reveal" style="background: linear-gradient(135deg,#1a0a1a,#0a1a1a);">
       <img class="design-img" src="images/Conception_graphique/203104.jpg" alt="Affiche 1">
       <div class="design-overlay">
